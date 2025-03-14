@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>神秘兑换处</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input[type="text"], input[type="button"] {
+            font-size: 16px;
+            padding: 8px;
+        }
+
+        input[type="button"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    神秘兑换处：<input type="text" id="name">
+    <br />
+    <input type="button" value="确定" onclick="checkCode()" />
+    <script>
+        function checkCode() {
+            var code = document.getElementById("name").value;
+            switch (code) {
+                case "SHIHAOFEI48HHUODONG":
+                    window.location.href = "https://weibo.com/7894509530/5143931805761900";  // 主页网址
+                    break;
+                case "SHIHAOFEI49HHUODONG":
+                    window.location.href = "https://weibo.com/7894509530/5143931805761900";  // 彩蛋网址1
+                    break;
+                case "SHIHAOFEI50HHUODONG":
+                    window.location.href = "https://weibo.com/7894509530/5143931805761900";  // 彩蛋网址2
+                    break;
+                default:
+                    alert("错误发生");
+            }
+        }
+    </script>
+</body>
+</html>
